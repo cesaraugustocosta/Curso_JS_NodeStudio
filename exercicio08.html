@@ -8,12 +8,19 @@
     <h1>GETELEMENTSBYTAGNAME E QUERYSELECTOR</h1>
 
     <div>div 1</div>
-    <div>div 2</div>
+    <div class="div2">div 2</div>
     <br>
-    <p>paragrafo</p>
+    <p id="p1">paragrafo 1</p>
+    <p id="p2">paragrafo 2</p>
 
     <script>
+      console.log(
+          document.getElementsByTagName("div")[1].innerHTML
+      )
 
+      console.log(
+          document.querySelector("#p2").innerHTML
+      )
     </script>
 </body>
 </html>
