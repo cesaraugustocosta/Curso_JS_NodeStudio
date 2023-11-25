@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUERYSELECTORALL</title>
+</head>
+<body>
+  <div id="futebol-brasileiro">
+      <div class="times">Grêmio</div>
+      <div class="times">Flamengo</div>
+      <div class="times">São Paulo</div>
+  </div>
+
+  <div id="futebol-europeu">
+    <div class="times">Real Madrid-ESP</div>
+    <div class="times">Barcelona-ESP</div>
+    <div class="times">Milan-IT</div>
+  </div>
+
+<script>
+  console.log(
+         document.querySelectorAll(".times")
+  )
+  /*Selecionando apenas times europeus  */
+  console.log(
+          document.getElementById("futebol-europeu").querySelectorAll(".times")[2].innerHTML
+  )
+</script>
+</body>
+</html>

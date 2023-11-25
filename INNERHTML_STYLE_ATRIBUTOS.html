@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INNERHTML, STYLE E ATRIBUTOS</title>
+</head>
+<body>
+    <h1>INNERHTML, STYLE E ATRIBUTOS</h1>
+    <p id="p1">Olá Mundo JS!</p>
+
+    <img id="imagem" src="images/BOM.png" alt="BOM do Navegador" srcset="">
+
+<script>
+   var paragrafo = document.getElementById("p1");
+   paragrafo.innerHTML = "Novo Conteúdo";
+
+   /* Trocando o Estilo do Paragrafo com o STYLE  */
+   paragrafo.style.color = "red"
+   paragrafo.style.backgroundColor = "#333"
+   paragrafo.style.height  = "440px"
+
+   /*Trocando uma imagem por outra com a propriedade*/
+   var imagem = document.getElementById("imagem")
+   imagem.src = "images/download.png"
+   imagem.alt = "Teste de imagem"
+   imagem.width = 400
+</script>
+</body>
+</html>
